@@ -1,0 +1,9 @@
+{
+    "random_seed": 149,
+    "bp_method": "product_sum",
+    "bit_error_rate": 0.05,
+    "target_runs": 1000,
+    "max_iter": 50,
+    "hx_alist": "../data/test.alist",
+    "output_path": "../data/output/"
+}
