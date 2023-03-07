@@ -172,9 +172,7 @@ public: // apis
         {
             auto has_error = this->generateError(bit_error);
             if (!has_error)
-            {
                 bp_success_count++; // treated as succeeded
-            }
             else
             {
                 auto [run_iter, converge, log_prob_ratios, bp_decoding] = bpDecoder.run(this->hx, this->bit_error);

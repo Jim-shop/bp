@@ -34,7 +34,7 @@ namespace bp_decoder
     private: // utils
         auto getParityChecks(::sparse_matrix::Mod2SparseMatrix const &matrix, ::std::vector<uint8_t> const &code_word);
         auto init(::sparse_matrix::Mod2SparseMatrix &matrix, ::std::vector<uint8_t> const &bit_error);
-        void update(::sparse_matrix::Mod2SparseMatrix &matrix, ::std::vector<uint8_t> &decoding, ::std::vector<double> &log_prob_ratios, ::std::vector<uint8_t> const &syndrome, double prob_ratio_initial);
+        void update(::sparse_matrix::Mod2SparseMatrix &matrix, ::std::vector<uint8_t> &decoding, ::std::vector<double> &log_prob_ratios, ::std::vector<uint8_t> const &syndrome, double prob_ratio_initial, int iter);
         size_t hammingWeight(::std::vector<uint8_t> const &src1, ::std::vector<uint8_t> const &src2);
 
     public: // apis
